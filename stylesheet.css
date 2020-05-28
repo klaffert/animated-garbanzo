@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: hsl(257, 40%, 49%);
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
