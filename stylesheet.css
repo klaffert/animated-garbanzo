@@ -5,10 +5,81 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
   background: hsl(257, 40%, 49%);
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1 {
   font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 0 35px;
+  line-height: 1.5em;
+}
+
+#background {
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.3rem;
+}
+
+#mockups {
+  position: absolute;
+  top: 30%;
+  padding-top: 0.8rem;
+  padding-right: 1.8rem;
+  padding-bottom: 0rem;
+  padding-left: 1.8rem;
+}
+
+#button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 14px;
+  width: 60%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icons {
+  margin-top: 60px;
+  list-style: none;
+  text-align: center;
+}
+
+.icons li {
+  display: inline-block;
+  margin: 6px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  padding-top: 2px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff; /* White */
 }
