@@ -90,7 +90,17 @@ nav {
 }
 
 @media (min-width: 900px) {
-  #bg {
-    background: url('images/bg-desktop.svg') no-repeat;
+  #background {
+    background: url('images/bg-desktop.svg') contain cover;
+    display: flex;
+  }
+
+  #logo {
+    width: 20%;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
   }
 }
