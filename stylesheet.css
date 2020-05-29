@@ -41,7 +41,7 @@ p {
 
 #mockups {
   position: absolute;
-  top: 30%;
+  top: 15%;
   padding-top: 0.8rem;
   padding-right: 1.8rem;
   padding-bottom: 0rem;
@@ -87,4 +87,10 @@ nav {
   margin: 0 10px;
   border-radius: 50%;
   border: 1px solid #fff;
+}
+
+@media (min-width: 900px) {
+  #bg {
+    background: url('images/bg-desktop.svg') no-repeat;
+  }
 }
