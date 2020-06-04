@@ -5,11 +5,12 @@
 }
 
 body {
-  background: hsl(257, 40%, 49%);
+  background-color: hsl(257, 40%, 49%);
+  background-image: url('images/bg-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
   font-family: 'Open Sans', sans-serif;
   color: white;
-  margin: 0;
-  padding: 0;
 }
 
 img {
@@ -30,22 +31,26 @@ p {
 }
 
 #background {
-  position: relative;
+  width: 83%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 #logo {
-  position: absolute;
-  left: 1.8rem;
-  top: 1.3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(375px * 0.42);
+  margin: 2em 0;
 }
 
 #mockups {
-  position: absolute;
-  top: 15%;
-  padding-top: 0.8rem;
-  padding-right: 1.8rem;
-  padding-bottom: 0rem;
-  padding-left: 1.8rem;
+  width: 100%;
+  margin: 5em 0 3.5em 0;
+}
+
+#content {
+  text-align: center;
 }
 
 #button-container {
@@ -64,43 +69,80 @@ button {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-nav {
-  text-align: center;
+button:hover,
+button:active {
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+footer {
+  margin: 6em 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icons {
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 120px;
 }
 
-.icons li {
-  float: left;
-  margin-top: 50px;
+.icon:hover,
+.icon:active {
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+  cursor: pointer;
 }
 
 .icon {
-  width: 28px;
-  height: 28px;
-  padding-top: 2px;
-  margin: 0 10px;
-  border-radius: 50%;
+  display: inline-block;
   border: 1px solid #fff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 900px) {
-  #background {
-    background: url('images/bg-desktop.svg') contain cover;
+  body {
+    background-size: cover;
+    background-image: url(/images/bg-desktop.svg);
     display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #background {
+    width: 100%;
   }
 
   #logo {
+    margin: 2% 0 1% 0;
     width: 20%;
   }
 
   #content {
-    display: flex;
-    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 0;
+    text-align: center;
+    max-width: 600px;
+  }
+
+  footer {
+    margin-top: 20px;
+    justify-content: flex-end;
   }
 }
